@@ -53,14 +53,14 @@ namespace ViewPagerIndicator
 		{
 			//Load defaults from resources
 			var res = Resources;
-			int defaultPageColor = res.GetColor (Resource.Color.default_circle_indicator_page_color);
-			int defaultFillColor = res.GetColor (Resource.Color.default_circle_indicator_fill_color);
-			int defaultOrientation = res.GetInteger (Resource.Integer.default_circle_indicator_orientation);
-			int defaultStrokeColor = res.GetColor (Resource.Color.default_circle_indicator_stroke_color);
-			float defaultStrokeWidth = res.GetDimension (Resource.Dimension.default_circle_indicator_stroke_width);
-			float defaultRadius = res.GetDimension (Resource.Dimension.default_circle_indicator_radius);
-			bool defaultCentered = res.GetBoolean (Resource.Boolean.default_circle_indicator_centered);
-			bool defaultSnap = res.GetBoolean (Resource.Boolean.default_circle_indicator_snap);
+			int defaultPageColor = Color.Transparent; // res.GetColor(Resource.Color.default_circle_indicator_page_color);
+			int defaultFillColor = Color.Black; // res.GetColor(Resource.Color.default_circle_indicator_fill_color);
+			int defaultOrientation = 0; // res.GetInteger(Resource.Integer.default_circle_indicator_orientation);
+			int defaultStrokeColor = Color.Gray; // res.GetColor (Resource.Color.default_circle_indicator_stroke_color);
+			float defaultStrokeWidth = 1; // res.GetDimension(Resource.Dimension.default_circle_indicator_stroke_width);
+			float defaultRadius = 6; // res.GetDimension(Resource.Dimension.default_circle_indicator_radius);
+			bool defaultCentered = true; // res.GetBoolean(Resource.Boolean.default_circle_indicator_centered);
+			bool defaultSnap = false; // res.GetBoolean(Resource.Boolean.default_circle_indicator_snap);
 			
 			//Retrieve styles attributes
 			var a = context.ObtainStyledAttributes (attrs, Resource.Styleable.CirclePageIndicator, defStyle, Resource.Style.Widget_CirclePageIndicator);

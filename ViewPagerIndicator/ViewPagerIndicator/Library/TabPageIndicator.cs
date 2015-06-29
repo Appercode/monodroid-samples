@@ -15,7 +15,7 @@ using Android.Util;
 
 namespace ViewPagerIndicator
 {
-	class TabPageIndicator : HorizontalScrollView, PageIndicator
+	public class TabPageIndicator : HorizontalScrollView, PageIndicator
 	{
 		private LinearLayout mTabLayout;
 		private ViewPager mViewPager;

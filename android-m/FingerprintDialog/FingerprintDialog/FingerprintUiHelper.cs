@@ -1,5 +1,5 @@
 ﻿using System;
-using Android.Hardware.Fingerprint;
+using Android.Hardware.Fingerprints;
 using Android.OS;
 using Android.Widget;
 using Android.Runtime;
@@ -76,7 +76,7 @@ namespace FingerprintDialog
 			
 			mCancellationSignal = new CancellationSignal ();
 			mSelfCancelled = false;
-			mFingerprintManager.Authenticate (cryptoObject, mCancellationSignal, this, 0 /* flags */);
+			mFingerprintManager.Authenticate (cryptoObject, mCancellationSignal, 0 /* flags */, this, null);
 			mIcon.SetImageResource (Resource.Drawable.ic_fp_40px);
 		}
 
@@ -89,7 +89,7 @@ namespace FingerprintDialog
 			}
 		}
 
-		public override void OnAuthenticationError (int errMsgId, Java.Lang.ICharSequence errString)
+		public override void OnAuthenticationError (FingerprintState errorCode, Java.Lang.ICharSequence errString)
 		{
 			if (!mSelfCancelled) {
 				ShowError (errString.ToString ());
@@ -99,7 +99,7 @@ namespace FingerprintDialog
 			}
 		}
 
-		public override void OnAuthenticationHelp (int helpMsgId, Java.Lang.ICharSequence helpString)
+		public override void OnAuthenticationHelp (FingerprintState helpCode, Java.Lang.ICharSequence helpString)
 		{
 			ShowError (helpString.ToString ());
 		}

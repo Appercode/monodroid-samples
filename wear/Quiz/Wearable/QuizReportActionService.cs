@@ -24,8 +24,8 @@ namespace Wearable
 		protected override void OnHandleIntent (Intent intent)
 		{
 			if (intent.Action.Equals (ACTION_RESET_QUIZ)) {
-				IGoogleApiClient google_api_client = new GoogleApiClientBuilder (this)
-					.AddApi (WearableClass.Api)
+				var google_api_client = new GoogleApiClient.Builder (this)
+					.AddApi (WearableClass.API)
 					.Build ();
 
 				ConnectionResult result = google_api_client.BlockingConnect (Constants.CONNECT_TIMEOUT_MS,

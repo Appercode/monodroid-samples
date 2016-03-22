@@ -13,7 +13,7 @@ using Android.Support.V4.View;
 using Java.Lang;
 using Android.Util;
 
-namespace ViewPagerIndicator.App
+namespace ViewPagerIndicator
 {
 	public class TabPageIndicator : HorizontalScrollView, PageIndicator
 	{

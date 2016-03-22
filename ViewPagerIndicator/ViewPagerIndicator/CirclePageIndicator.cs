@@ -15,7 +15,7 @@ using Android.Util;
 using Java.Lang;
 using Java.Interop;
 
-namespace ViewPagerIndicator.App
+namespace ViewPagerIndicator
 {
 	public class CirclePageIndicator : View, PageIndicator
 	{

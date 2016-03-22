@@ -68,11 +68,6 @@
     <Compile Include="Titles\SampleTitlesStyledLayout.cs" />
     <Compile Include="Tabs\SampleTabsDefault.cs" />
     <Compile Include="Tabs\SampleTabsStyled.cs" />
-    <Compile Include="Library\CirclePageIndicator.cs" />
-    <Compile Include="Library\PageIndicator.cs" />
-    <Compile Include="Library\TabPageIndicator.cs" />
-    <Compile Include="Library\TitlePageIndicator.cs" />
-    <Compile Include="Library\TitleProvider.cs" />
     <Compile Include="Titles\SampleTitlesStyledMethods.cs" />
     <Compile Include="Titles\SampleTitlesStyledTheme.cs" />
     <Compile Include="Titles\SampleTitlesTriangle.cs" />
@@ -89,65 +84,22 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />
-    <AndroidResource Include="Resources\layout\vpi__tab.xml" />
-    <AndroidResource Include="Resources\values\vpi__attrs.xml" />
-    <AndroidResource Include="Resources\values\vpi__colors.xml" />
-    <AndroidResource Include="Resources\values\vpi__defaults.xml" />
-    <AndroidResource Include="Resources\values\vpi__styles.xml" />
-    <AndroidResource Include="Resources\drawable-xhdpi\vpi__tab_selected_focused_holo.9.png" />
-    <AndroidResource Include="Resources\drawable-xhdpi\vpi__tab_selected_holo.9.png" />
-    <AndroidResource Include="Resources\drawable-xhdpi\vpi__tab_selected_pressed_holo.9.png" />
-    <AndroidResource Include="Resources\drawable-xhdpi\vpi__tab_unselected_focused_holo.9.png" />
-    <AndroidResource Include="Resources\drawable-xhdpi\vpi__tab_unselected_holo.9.png" />
-    <AndroidResource Include="Resources\drawable-xhdpi\vpi__tab_unselected_pressed_holo.9.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\vpi__tab_selected_focused_holo.9.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\vpi__tab_selected_holo.9.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\vpi__tab_selected_pressed_holo.9.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\vpi__tab_unselected_focused_holo.9.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\vpi__tab_unselected_holo.9.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\vpi__tab_unselected_pressed_holo.9.png" />
-    <AndroidResource Include="Resources\drawable-mdpi\vpi__tab_selected_focused_holo.9.png" />
-    <AndroidResource Include="Resources\drawable-mdpi\vpi__tab_selected_holo.9.png" />
-    <AndroidResource Include="Resources\drawable-mdpi\vpi__tab_selected_pressed_holo.9.png" />
-    <AndroidResource Include="Resources\drawable-mdpi\vpi__tab_unselected_focused_holo.9.png" />
-    <AndroidResource Include="Resources\drawable-mdpi\vpi__tab_unselected_holo.9.png" />
-    <AndroidResource Include="Resources\drawable-mdpi\vpi__tab_unselected_pressed_holo.9.png" />
-    <AndroidResource Include="Resources\drawable\vpi__tab_indicator.xml" />
-    <AndroidResource Include="Resources\color\vpi__dark_theme.xml" />
-    <AndroidResource Include="Resources\color\vpi__light_theme.xml" />
     <AndroidResource Include="Resources\menu\menu.xml" />
     <AndroidResource Include="Resources\layout\simple_tabs.xml" />
-    <AndroidResource Include="Resources\values\styles.xml" />
-    <AndroidResource Include="Resources\drawable\custom_tab_indicator.xml" />
-    <AndroidResource Include="Resources\drawable-hdpi\custom_tab_indicator_focused.9.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\custom_tab_indicator_selected.9.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\custom_tab_indicator_selected_pressed.9.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\custom_tab_indicator_unselected.9.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\custom_tab_indicator_unselected_focused.9.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\custom_tab_indicator_unselected_pressed.9.png" />
-    <AndroidResource Include="Resources\drawable-mdpi\custom_tab_indicator_selected.9.png" />
-    <AndroidResource Include="Resources\drawable-mdpi\custom_tab_indicator_selected_focused.9.png" />
-    <AndroidResource Include="Resources\drawable-mdpi\custom_tab_indicator_selected_pressed.9.png" />
-    <AndroidResource Include="Resources\drawable-mdpi\custom_tab_indicator_unselected.9.png" />
-    <AndroidResource Include="Resources\drawable-mdpi\custom_tab_indicator_unselected_focused.9.png" />
-    <AndroidResource Include="Resources\drawable-mdpi\custom_tab_indicator_unselected_pressed.9.png" />
-    <AndroidResource Include="Resources\drawable-xhdpi\custom_tab_indicator_selected.9.png" />
-    <AndroidResource Include="Resources\drawable-xhdpi\custom_tab_indicator_selected_focused.9.png" />
-    <AndroidResource Include="Resources\drawable-xhdpi\custom_tab_indicator_selected_pressed.9.png" />
-    <AndroidResource Include="Resources\drawable-xhdpi\custom_tab_indicator_unselected.9.png" />
-    <AndroidResource Include="Resources\drawable-xhdpi\custom_tab_indicator_unselected_focused.9.png" />
-    <AndroidResource Include="Resources\drawable-xhdpi\custom_tab_indicator_unselected_pressed.9.png" />
     <AndroidResource Include="Resources\layout\simple_circles.xml" />
     <AndroidResource Include="Resources\layout\simple_circles_vertical.xml" />
     <AndroidResource Include="Resources\layout\simple_titles.xml" />
-    <AndroidResource Include="Resources\layout\themed_circles.xml" />
-    <AndroidResource Include="Resources\layout\themed_titles.xml" />
     <AndroidResource Include="Resources\drawable-ldpi\icon.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\icon.png" />
     <AndroidResource Include="Resources\drawable-hdpi\icon.png" />
     <AndroidResource Include="Resources\drawable-mdpi\icon.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\icon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ViewPagerIndicator\ViewPagerIndicator.csproj">
+      <Project>{7E2A9C7C-33C8-48CC-899C-7E34D7D035C9}</Project>
+      <Name>ViewPagerIndicator</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
-  <ItemGroup />
 </Project>

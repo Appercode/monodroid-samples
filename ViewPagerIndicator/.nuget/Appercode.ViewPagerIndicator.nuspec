@@ -2,18 +2,18 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
     <metadata>
         <id>Appercode.ViewPagerIndicator</id>
-        <version>1.0.0.1</version>
-        <title>Appercode ViewPagerIndicator</title>
+        <version>1.0.2</version>
+        <title>Appercode - ViewPagerIndicator</title>
         <authors>Appercode</authors>
         <owners>Appercode</owners>
         <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
         <projectUrl>https://github.com/Appercode/monodroid-samples</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <description>ViewPagerIndicator project is part of monodroid-samples - collection of Xamarin.Android sample projects. This package contains compiled ViewPagerIndicator project with some changes, which available to use it in the Appercode UI Framework for Android.</description>
-        <copyright>© Xamarin Inc 2011</copyright>
+        <description>ViewPagerIndicator project is part of the monodroid-samples - collection of Xamarin.Android sample projects. This package contains compiled ViewPagerIndicator project with some changes, which make it useful in the Appercode UI Framework for Android.</description>
+        <copyright>© Appercode 2016</copyright>
         <dependencies>
             <group targetFramework="MonoAndroid">
-                <dependency id="Xamarin.Android.Support.v4" version="21.0.3.0" />
+                <dependency id="Xamarin.Android.Support.v4" version="21.1.1.1" />
             </group>
         </dependencies>
     </metadata>

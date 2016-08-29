@@ -66,7 +66,7 @@ namespace ViewPagerIndicator
 			var a = context.ObtainStyledAttributes (attrs, Resource.Styleable.CirclePageIndicator, defStyle, Resource.Style.Widget_CirclePageIndicator);
 		
 			mCentered = a.GetBoolean (Resource.Styleable.CirclePageIndicator_centered, defaultCentered);
-			mOrientation = a.GetInt (Resource.Styleable.CirclePageIndicator_orientation, defaultOrientation);
+			mOrientation = a.GetInt (Resource.Styleable.CirclePageIndicator_vpi_orientation, defaultOrientation);
 			mPaintPageFill = new Paint (PaintFlags.AntiAlias);
 			mPaintPageFill.SetStyle (Paint.Style.Fill);
 			mPaintPageFill.Color = a.GetColor (Resource.Styleable.CirclePageIndicator_pageColor, defaultPageColor);

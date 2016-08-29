@@ -52,7 +52,7 @@ namespace ViewPagerIndicator
 		public CirclePageIndicator (Context context, IAttributeSet attrs, int defStyle) : base(context, attrs, defStyle)
 		{
 			//Load defaults from resources
-			var res = Resources;
+			// var res = Resources;
 			int defaultPageColor = Color.Transparent; // res.GetColor(Resource.Color.default_circle_indicator_page_color);
 			int defaultFillColor = Color.Black; // res.GetColor(Resource.Color.default_circle_indicator_fill_color);
 			int defaultOrientation = 0; // res.GetInteger(Resource.Integer.default_circle_indicator_orientation);
@@ -65,20 +65,20 @@ namespace ViewPagerIndicator
 			//Retrieve styles attributes
 			var a = context.ObtainStyledAttributes (attrs, Resource.Styleable.CirclePageIndicator, defStyle, Resource.Style.Widget_CirclePageIndicator);
 		
-			mCentered = a.GetBoolean (Resource.Styleable.CirclePageIndicator_centered, defaultCentered);
+			mCentered = a.GetBoolean (Resource.Styleable.CirclePageIndicator_vpi_centered, defaultCentered);
 			mOrientation = a.GetInt (Resource.Styleable.CirclePageIndicator_vpi_orientation, defaultOrientation);
 			mPaintPageFill = new Paint (PaintFlags.AntiAlias);
 			mPaintPageFill.SetStyle (Paint.Style.Fill);
-			mPaintPageFill.Color = a.GetColor (Resource.Styleable.CirclePageIndicator_pageColor, defaultPageColor);
+			mPaintPageFill.Color = a.GetColor (Resource.Styleable.CirclePageIndicator_vpi_pageColor, defaultPageColor);
 			mPaintStroke = new Paint (PaintFlags.AntiAlias);
 			mPaintStroke.SetStyle (Paint.Style.Stroke);
-			mPaintStroke.Color = a.GetColor (Resource.Styleable.CirclePageIndicator_strokeColor, defaultStrokeColor);
-			mPaintStroke.StrokeWidth = a.GetDimension (Resource.Styleable.CirclePageIndicator_strokeWidth, defaultStrokeWidth);
+			mPaintStroke.Color = a.GetColor (Resource.Styleable.CirclePageIndicator_vpi_strokeColor, defaultStrokeColor);
+			mPaintStroke.StrokeWidth = a.GetDimension (Resource.Styleable.CirclePageIndicator_vpi_strokeWidth, defaultStrokeWidth);
 			mPaintFill = new Paint (PaintFlags.AntiAlias);
 			mPaintFill.SetStyle (Paint.Style.Fill);
-			mPaintFill.Color = a.GetColor (Resource.Styleable.CirclePageIndicator_fillColor, defaultFillColor);
-			mRadius = a.GetDimension (Resource.Styleable.CirclePageIndicator_radius, defaultRadius);
-			mSnap = a.GetBoolean (Resource.Styleable.CirclePageIndicator_snap, defaultSnap);
+			mPaintFill.Color = a.GetColor (Resource.Styleable.CirclePageIndicator_vpi_fillColor, defaultFillColor);
+			mRadius = a.GetDimension (Resource.Styleable.CirclePageIndicator_vpi_radius, defaultRadius);
+			mSnap = a.GetBoolean (Resource.Styleable.CirclePageIndicator_vpi_snap, defaultSnap);
 			
 			a.Recycle ();
 			

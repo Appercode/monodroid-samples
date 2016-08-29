@@ -25,30 +25,30 @@
     <style name="Widget"></style>
 
     <style name="Widget.CirclePageIndicator" parent="Widget">
-        <item name="centered">@bool/default_circle_indicator_centered</item>
-        <item name="fillColor">@color/default_circle_indicator_fill_color</item>
-        <item name="pageColor">@color/default_circle_indicator_page_color</item>
+        <item name="vpi_centered">@bool/default_circle_indicator_centered</item>
+        <item name="vpi_fillColor">@color/default_circle_indicator_fill_color</item>
+        <item name="vpi_pageColor">@color/default_circle_indicator_page_color</item>
         <item name="vpi_orientation">@integer/default_circle_indicator_orientation</item>
-        <item name="radius">@dimen/default_circle_indicator_radius</item>
-        <item name="snap">@bool/default_circle_indicator_snap</item>
-        <item name="strokeColor">@color/default_circle_indicator_stroke_color</item>
-        <item name="strokeWidth">@dimen/default_circle_indicator_stroke_width</item>
+        <item name="vpi_radius">@dimen/default_circle_indicator_radius</item>
+        <item name="vpi_snap">@bool/default_circle_indicator_snap</item>
+        <item name="vpi_strokeColor">@color/default_circle_indicator_stroke_color</item>
+        <item name="vpi_strokeWidth">@dimen/default_circle_indicator_stroke_width</item>
     </style>
 
     <style name="Widget.TitlePageIndicator" parent="Widget">
-        <item name="clipPadding">@dimen/default_title_indicator_clip_padding</item>
-        <item name="footerColor">@color/default_title_indicator_footer_color</item>
-        <item name="footerLineHeight">@dimen/default_title_indicator_footer_line_height</item>
-        <item name="footerIndicatorStyle">@integer/default_title_indicator_footer_indicator_style</item>
-        <item name="footerIndicatorHeight">@dimen/default_title_indicator_footer_indicator_height</item>
-        <item name="footerIndicatorUnderlinePadding">@dimen/default_title_indicator_footer_indicator_underline_padding</item>
-        <item name="footerPadding">@dimen/default_title_indicator_footer_padding</item>
-        <item name="selectedColor">@color/default_title_indicator_selected_color</item>
-        <item name="selectedBold">@bool/default_title_indicator_selected_bold</item>
-        <item name="textColor">@color/default_title_indicator_text_color</item>
-        <item name="textSize">@dimen/default_title_indicator_text_size</item>
-        <item name="titlePadding">@dimen/default_title_indicator_title_padding</item>
-        <item name="topPadding">@dimen/default_title_indicator_top_padding</item>
+        <item name="vpi_clipPadding">@dimen/default_title_indicator_clip_padding</item>
+        <item name="vpi_footerColor">@color/default_title_indicator_footer_color</item>
+        <item name="vpi_footerLineHeight">@dimen/default_title_indicator_footer_line_height</item>
+        <item name="vpi_footerIndicatorStyle">@integer/default_title_indicator_footer_indicator_style</item>
+        <item name="vpi_footerIndicatorHeight">@dimen/default_title_indicator_footer_indicator_height</item>
+        <item name="vpi_footerIndicatorUnderlinePadding">@dimen/default_title_indicator_footer_indicator_underline_padding</item>
+        <item name="vpi_footerPadding">@dimen/default_title_indicator_footer_padding</item>
+        <item name="vpi_selectedColor">@color/default_title_indicator_selected_color</item>
+        <item name="vpi_selectedBold">@bool/default_title_indicator_selected_bold</item>
+        <item name="vpi_textColor">@color/default_title_indicator_text_color</item>
+        <item name="vpi_textSize">@dimen/default_title_indicator_text_size</item>
+        <item name="vpi_titlePadding">@dimen/default_title_indicator_title_padding</item>
+        <item name="vpi_topPadding">@dimen/default_title_indicator_top_padding</item>
     </style>
     
     <style name="Widget.TabPageIndicator" parent="Widget">

@@ -33,11 +33,11 @@
         android:layout_height="wrap_content"
         android:layout_width="fill_parent"
         android:background="#FFCCCCCC"
-        app:radius="10dp"
-        app:fillColor="#FF888888"
-        app:pageColor="#88FF0000"
-        app:strokeColor="#FF000000"
-        app:strokeWidth="2dp"
+        app:vpi_radius="10dp"
+        app:vpi_fillColor="#FF888888"
+        app:vpi_pageColor="#88FF0000"
+        app:vpi_strokeColor="#FF000000"
+        app:vpi_strokeWidth="2dp"
         />
 
 </LinearLayout>

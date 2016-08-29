@@ -112,20 +112,20 @@ namespace ViewPagerIndicator
 			var a = context.ObtainStyledAttributes (attrs, Resource.Styleable.TitlePageIndicator, defStyle, Resource.Style.Widget_TitlePageIndicator);
 	
 			//Retrieve the colors to be used for this view and apply them.
-			mFooterLineHeight = a.GetDimension (Resource.Styleable.TitlePageIndicator_footerLineHeight, defaultFooterLineHeight);
-			mFooterIndicatorStyle = (IndicatorStyle)a.GetInteger (Resource.Styleable.TitlePageIndicator_footerIndicatorStyle, defaultFooterIndicatorStyle);
-			mFooterIndicatorHeight = a.GetDimension (Resource.Styleable.TitlePageIndicator_footerIndicatorHeight, defaultFooterIndicatorHeight);
-			mFooterIndicatorUnderlinePadding = a.GetDimension (Resource.Styleable.TitlePageIndicator_footerIndicatorUnderlinePadding, defaultFooterIndicatorUnderlinePadding);
-			mFooterPadding = a.GetDimension (Resource.Styleable.TitlePageIndicator_footerPadding, defaultFooterPadding);
-			mTopPadding = a.GetDimension (Resource.Styleable.TitlePageIndicator_topPadding, defaultTopPadding);
-			mTitlePadding = a.GetDimension (Resource.Styleable.TitlePageIndicator_titlePadding, defaultTitlePadding);
-			mClipPadding = a.GetDimension (Resource.Styleable.TitlePageIndicator_clipPadding, defaultClipPadding);
-			mColorSelected = a.GetColor (Resource.Styleable.TitlePageIndicator_selectedColor, defaultSelectedColor);
-			mColorText = a.GetColor (Resource.Styleable.TitlePageIndicator_textColor, defaultTextColor);
-			mBoldText = a.GetBoolean (Resource.Styleable.TitlePageIndicator_selectedBold, defaultSelectedBold);
+			mFooterLineHeight = a.GetDimension (Resource.Styleable.TitlePageIndicator_vpi_footerLineHeight, defaultFooterLineHeight);
+			mFooterIndicatorStyle = (IndicatorStyle)a.GetInteger (Resource.Styleable.TitlePageIndicator_vpi_footerIndicatorStyle, defaultFooterIndicatorStyle);
+			mFooterIndicatorHeight = a.GetDimension (Resource.Styleable.TitlePageIndicator_vpi_footerIndicatorHeight, defaultFooterIndicatorHeight);
+			mFooterIndicatorUnderlinePadding = a.GetDimension (Resource.Styleable.TitlePageIndicator_vpi_footerIndicatorUnderlinePadding, defaultFooterIndicatorUnderlinePadding);
+			mFooterPadding = a.GetDimension (Resource.Styleable.TitlePageIndicator_vpi_footerPadding, defaultFooterPadding);
+			mTopPadding = a.GetDimension (Resource.Styleable.TitlePageIndicator_vpi_topPadding, defaultTopPadding);
+			mTitlePadding = a.GetDimension (Resource.Styleable.TitlePageIndicator_vpi_titlePadding, defaultTitlePadding);
+			mClipPadding = a.GetDimension (Resource.Styleable.TitlePageIndicator_vpi_clipPadding, defaultClipPadding);
+			mColorSelected = a.GetColor (Resource.Styleable.TitlePageIndicator_vpi_selectedColor, defaultSelectedColor);
+			mColorText = a.GetColor (Resource.Styleable.TitlePageIndicator_vpi_textColor, defaultTextColor);
+			mBoldText = a.GetBoolean (Resource.Styleable.TitlePageIndicator_vpi_selectedBold, defaultSelectedBold);
 	
-			float textSize = a.GetDimension (Resource.Styleable.TitlePageIndicator_textSize, defaultTextSize);
-			Color footerColor = a.GetColor (Resource.Styleable.TitlePageIndicator_footerColor, defaultFooterColor);
+			float textSize = a.GetDimension (Resource.Styleable.TitlePageIndicator_vpi_textSize, defaultTextSize);
+			Color footerColor = a.GetColor (Resource.Styleable.TitlePageIndicator_vpi_footerColor, defaultFooterColor);
 			mPaintText.TextSize = textSize;
 			mPaintText.AntiAlias = true;
 			mPaintFooterLine.SetStyle (Android.Graphics.Paint.Style.FillAndStroke);

@@ -1,14 +1,7 @@
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Android.App;
 using Android.Content;
 using Android.OS;
-using Android.Runtime;
 using Android.Views;
-using Android.Widget;
 using Android.Graphics;
 using Android.Support.V4.View;
 using Android.Util;
@@ -630,7 +623,7 @@ namespace ViewPagerIndicator
 				throw new IllegalStateException ("ViewPager adapter must implement TitleProvider to be used with TitlePageIndicator.");
 			}
 			mViewPager = view;
-			mViewPager.SetOnPageChangeListener (this);
+			mViewPager.AddOnPageChangeListener (this);
 			mTitleProvider = (TitleProvider)adapter;
 			Invalidate ();
 		}

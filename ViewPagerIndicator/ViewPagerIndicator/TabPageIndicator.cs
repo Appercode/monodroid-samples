@@ -1,11 +1,5 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Android.App;
 using Android.Content;
-using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
@@ -35,7 +29,7 @@ namespace ViewPagerIndicator
 			mInflater = LayoutInflater.From (context);
 	
 			mTabLayout = new LinearLayout (Context);
-			AddView (mTabLayout, new ViewGroup.LayoutParams (ViewGroup.LayoutParams.WrapContent, ViewGroup.LayoutParams.FillParent));
+			AddView (mTabLayout, new ViewGroup.LayoutParams (ViewGroup.LayoutParams.WrapContent, ViewGroup.LayoutParams.MatchParent));
 		}
 		
 		protected override void OnMeasure (int widthMeasureSpec, int heightMeasureSpec)
@@ -135,7 +129,7 @@ namespace ViewPagerIndicator
 				mViewPager.CurrentItem = tView.GetIndex ();
 			};
 	
-			mTabLayout.AddView (tabView, new LinearLayout.LayoutParams (0, LayoutParams.FillParent, 1));
+			mTabLayout.AddView (tabView, new LinearLayout.LayoutParams (0, LayoutParams.MatchParent, 1));
 		}
 		
 		public void OnPageScrollStateChanged (int p0)
@@ -170,7 +164,7 @@ namespace ViewPagerIndicator
 				throw new IllegalStateException ("ViewPager adapter must implement TitleProvider to be used with TitlePageIndicator.");
 			}
 			mViewPager = view;
-			view.SetOnPageChangeListener (this);
+			view.AddOnPageChangeListener (this);
 			NotifyDataSetChanged ();
 		}
 		

@@ -1,14 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-
-using Android.App;
-using Android.Content;
 using Android.OS;
-using Android.Runtime;
 using Android.Views;
 using Android.Widget;
-using Android.Support.V4.App;
 using System.Text;
 
 using Fragment = Android.Support.V4.App.Fragment;
@@ -51,7 +43,7 @@ namespace ViewPagerIndicator
 			text.SetPadding (20, 20, 20, 20);
 	
 			LinearLayout layout = new LinearLayout (Activity);
-			layout.LayoutParameters = new ViewGroup.LayoutParams (ViewGroup.LayoutParams.FillParent, ViewGroup.LayoutParams.FillParent);
+			layout.LayoutParameters = new ViewGroup.LayoutParams (ViewGroup.LayoutParams.MatchParent, ViewGroup.LayoutParams.MatchParent);
 			layout.SetGravity (GravityFlags.Center);
 			layout.AddView (text);
 	

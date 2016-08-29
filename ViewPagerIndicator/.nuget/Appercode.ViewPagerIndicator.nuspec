@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
     <metadata>
         <id>Appercode.ViewPagerIndicator</id>
-        <version>1.0.2</version>
+        <version>1.1.1</version>
         <title>Appercode - ViewPagerIndicator</title>
         <authors>Appercode</authors>
         <owners>Appercode</owners>
@@ -13,7 +13,7 @@
         <copyright>© Appercode 2016</copyright>
         <dependencies>
             <group targetFramework="MonoAndroid">
-                <dependency id="Xamarin.Android.Support.v4" version="21.1.1.1" />
+                <dependency id="Xamarin.Android.Support.v4" version="23.4.0.1" />
             </group>
         </dependencies>
     </metadata>

@@ -2,6 +2,7 @@ using Android.Content;
 using Android.OS;
 using Android.Views;
 using Android.Graphics;
+using Android.Runtime;
 using Android.Support.V4.View;
 using Android.Util;
 using Java.Lang;
@@ -532,12 +533,12 @@ namespace ViewPagerIndicator
 				dest.WriteInt (CurrentPage);
 			}
 			
-			[ExportField ("CREATOR")]
-			static SavedStateCreator InitializeCreator ()
+			[Preserve]
+			public new static IParcelableCreator Creator
 			{
-				return new SavedStateCreator ();
+				get { return new SavedStateCreator(); }
 			}
-			
+
 			class SavedStateCreator : Java.Lang.Object, IParcelableCreator
 			{
 				public Java.Lang.Object CreateFromParcel (Parcel source)
